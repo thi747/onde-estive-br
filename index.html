@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Onde Estive BR</title>
+    <link rel="stylesheet" href="css/mapa.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="query-table">
+        <table>
+          <thead>
+            <tr id="uf-row"></tr>
+          </thead>
+          <tbody>
+            <tr id="param-row"></tr>
+          </tbody>
+        </table>
+      </div>
+      <span id="usage"><strong>Uso:</strong> <em>&lt;URL&gt;</em></span>
+
+      <svg id="svg-map" xmlns="http://www.w3.org/2000/svg" height="913" stroke="var(--contorno)" version="1.2" width="875">
+        <g id="estados">
+          <path id="AC" name="Acre"></path>
+          <text id="AC_label">AC</text>
+
+          <path id="AL" name="Alagoas"></path>
+          <text id="AL_label">AL</text>
+
+          <path id="AM" name="Amazonas"></path>
+          <text id="AM_label">AM</text>
+
+          <path id="AP" name="Amapá"></path>
+          <text id="AP_label">AP</text>
+
+          <path id="BA" name="Bahia"></path>
+          <text id="BA_label">BA</text>
+
+          <path id="CE" name="Ceará"></path>
+          <text id="CE_label">CE</text>
+
+          <path id="ES" name="Espírito Santo"></path>
+          <text id="ES_label">ES</text>
+
+          <path id="GO" name="Goiás"></path>
+          <text id="GO_label">GO</text>
+
+          <path id="MA" name="Maranhão"></path>
+          <text id="MA_label">MA</text>
+
+          <path id="MG" name="Minas Gerais"></path>
+          <text id="MG_label">MG</text>
+
+          <path id="MS" name="Mato Grosso do Sul"></path>
+          <text id="MS_label">MS</text>
+
+          <path id="MT" name="Mato Grosso"></path>
+          <text id="MT_label">MT</text>
+
+          <path id="PA" name="Pará"></path>
+          <text id="PA_label">PA</text>
+
+          <path id="PB" name="Paraíba"></path>
+          <text id="PB_label">PB</text>
+
+          <path id="PE" name="Pernambuco"></path>
+          <text id="PE_label">PE</text>
+
+          <path id="PI" name="Piauí"></path>
+          <text id="PI_label">PI</text>
+
+          <path id="PR" name="Paraná"></path>
+          <text id="PR_label">PR</text>
+
+          <path id="RJ" name="Rio de Janeiro"></path>
+          <text id="RJ_label">RJ</text>
+
+          <path id="RN" name="Rio Grande do Norte"></path>
+          <text id="RN_label">RN</text>
+
+          <path id="RO" name="Rondônia"></path>
+          <text id="RO_label">RO</text>
+
+          <path id="RR" name="Roraima"></path>
+          <text id="RR_label">RR</text>
+
+          <path id="RS" name="Rio Grande do Sul"></path>
+          <text id="RS_label">RS</text>
+
+          <path id="SC" name="Santa Catarina"></path>
+          <text id="SC_label">SC</text>
+
+          <path id="SE" name="Sergipe"></path>
+          <text id="SE_label">SE</text>
+
+          <path id="SP" name="São Paulo"></path>
+          <text id="SP_label">SP</text>
+
+          <path id="TO" name="Tocantins"></path>
+          <text id="TO_label">TO</text>
+
+          <path id="DF" name="Distrito Federal"></path>
+          <text id="DF_label">DF</text>
+        </g>
+      </svg>
+
+      <div class="legenda">
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-0)">0</div>
+          <span>Nenhuma interação</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-1)">1</div>
+          <span>Reside</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-2)">2</div>
+          <span>Já residiu</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-3)">3</div>
+          <span>Lazer</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-4)">4</div>
+          <span>Trabalho</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-5)">5</div>
+          <span>Lazer + Trabalho</span>
+        </div>
+        <div class="legenda-item">
+          <div class="legenda-color" style="background-color: var(--status-6)">6</div>
+          <span>Apenas passagem</span>
+        </div>
+      </div>
+    </div>
+    <!-- Thanks to https://simplemaps.com for the svg map! -->
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
