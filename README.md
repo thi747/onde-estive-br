@@ -70,7 +70,7 @@ estados.
 
 ## Licença
 
-Este projeto está licenciado sob a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).  
-Você pode usar este projeto conforme os termos da licença, desde que dê o devido crédito ao repositório original.
+Este projeto está licenciado sob a [MIT License](LICENSE).  
+Você é livre para utilizar este projeto conforme os termos da licença. Lembre-se de atribuir o devido crédito ao repositório original.
 
 ---
