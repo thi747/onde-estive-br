@@ -2,6 +2,7 @@
 
 :root {
   --contorno: #aaa;
+  --contorno-mapa: #6b6f75;
   --fundo: #212529;
   --vazio: #fff;
 
@@ -10,7 +11,7 @@
   --status-2: #ffcc80; /* Já residiu */
   --status-3: #90caf9; /* Lazer */
   --status-4: #e98d8d; /* Trabalho */
-  --status-5: #ce9fd6; /* Lazer + Trabalho */
+  --status-5: #d1a9d8; /* Lazer + Trabalho */
   --status-6: #fff59d; /* Apenas passagem */
 }
 
@@ -31,11 +32,24 @@ g {
   margin: 0px;
   padding: 0px;
 }
+svg {
+  stroke: var(--contorno-mapa);
+}
 text {
   cursor: default;
   font: 12px Roboto, sans-serif;
   stroke: var(--fundo);
   user-select: none;
+}
+
+#btnrandom {
+  background-color: var(--vazio);
+  border: 0;
+  border-radius: 100px;
+  color: var(--fundo);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0px 5px;
 }
 
 .container {

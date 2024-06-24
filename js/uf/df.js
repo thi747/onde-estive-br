@@ -6,4 +6,4 @@ const MAP =
 
 export default MAP;
 
-setOnMap(UF, MAP, 567, 469);
+setOnMap(UF, MAP, 566, 474);

@@ -59,9 +59,8 @@ function obterParametroURL(nomeParam) {
 }
 
 function preencherInstrucoes() {
-  const uri = window.location.href.split("?")[0];
-  const link = `${uri}?q=${QUERY_STRING}`;
-  document.getElementById("usage").innerHTML += `<a href="${link}"><em>${uri}</em>?q=${QUERY_STRING}</a>`;
+  const link = `${URL}?q=${QUERY_STRING}`;
+  document.getElementById("usage").innerHTML += `<a href="${link}"><em>${URL}</em>?q=${QUERY_STRING}</a>`;
 }
 
 function preencherTabela() {
@@ -82,6 +81,15 @@ function preencherTabela() {
   });
 }
 
+function randomizar() {
+  let qs = "";
+  for (let i = 0; i < TOTAL_UFS; i++) {
+    qs += Math.floor(Math.random() * 7);
+  }
+  console.log(qs);
+  window.location = `${URL}?q=${qs}`;
+}
+
 function validaQueryString(qs) {
   if (qs.length == TOTAL_UFS) {
     return qs;
@@ -93,6 +101,7 @@ function validaQueryString(qs) {
 }
 
 // ############################################################################################
+const URL = window.location.href.split("?")[0];
 // Mapeamento das UFs em ordem alfabética de sigla
 const ESTADOS = Array.from(document.querySelectorAll("path"))
   .map((path) => path.id) // mapeia para obter os IDs do HTML
@@ -100,6 +109,8 @@ const ESTADOS = Array.from(document.querySelectorAll("path"))
 ESTADOS.sort();
 
 const TOTAL_UFS = ESTADOS.length;
+
+document.getElementById("btnrandom").addEventListener("click", randomizar);
 
 // String de 27 dígitos (1/uf)
 const QUERY_STRING = validaQueryString(obterParametroURL("q") || "430435133060063604300005030");
