@@ -23,28 +23,28 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: var(--fundo);
+  height: 100vh;
+  width: 100vw;
 }
 g {
   margin: 0px;
   padding: 0px;
 }
 text {
+  cursor: default;
   font: 12px Roboto, sans-serif;
   stroke: var(--fundo);
-  cursor: default;
   user-select: none;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 .legenda {
@@ -53,8 +53,8 @@ text {
   margin-bottom: 15px;
 }
 .legenda-item {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .legenda-item span {
   padding-right: 10px;
