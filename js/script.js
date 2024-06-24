@@ -60,7 +60,8 @@ function obterParametroURL(nomeParam) {
 
 function preencherInstrucoes() {
   const uri = window.location.href.split("?")[0];
-  document.getElementById("usage").innerHTML += `<em>${uri}</em>?q=${QUERY_STRING}`;
+  const link = `${uri}?q=${QUERY_STRING}`;
+  document.getElementById("usage").innerHTML += `<a href="${link}"><em>${uri}</em>?q=${QUERY_STRING}</a>`;
 }
 
 function preencherTabela() {
