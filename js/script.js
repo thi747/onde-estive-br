@@ -59,9 +59,9 @@ function obterParametroURL(nomeParam) {
 }
 
 function preencherInstrucoes() {
-  const uri = window.location.pathname;
+  const uri = window.location.href;
   const empty = "".padEnd(TOTAL_UFS, 0);
-  document.getElementById("usage").innerHTML += `${uri}?q=${empty}`;
+  document.getElementById("usage").innerHTML += ` <em>${uri}</em>?q=${empty}`;
 }
 
 function preencherTabela() {
