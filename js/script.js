@@ -59,7 +59,7 @@ function obterParametroURL(nomeParam) {
 }
 
 function preencherInstrucoes() {
-  const uri = window.location.href;
+  const uri = window.location.href.split("?")[0];
   const empty = "".padEnd(TOTAL_UFS, 0);
   document.getElementById("usage").innerHTML += ` <em>${uri}</em>?q=${empty}`;
 }
