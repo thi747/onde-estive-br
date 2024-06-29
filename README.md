@@ -1,3 +1,5 @@
+https://thi747.github.io/onde-estive-br/
+
 # Mapa do Brasil Interativo
 
 Este projeto exibe um mapa interativo do Brasil que colore os estados
@@ -33,7 +35,7 @@ Clone este repositório em sua máquina local usando o seguinte comando:
 
 ### Passo 2: Abrir o Projeto
 
-Navegue até o diretório do projeto e abra o arquivo `index.html` em um navegador web, preferencialmente atráves de um web server ou live server.
+Navegue até o diretório do projeto e abra o arquivo `index.html` em um navegador web, preferencialmente atráves de um web server ou live server (devido CORS).
 
 ### Passo 3: Usar o Parâmetro `?q=`
 
