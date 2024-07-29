@@ -34,6 +34,10 @@ g {
 }
 svg {
   stroke: var(--contorno-mapa);
+  position: relative;
+  top: -20px;
+  height: 880px !important;
+  width: 875px;
 }
 text {
   cursor: default;
@@ -63,8 +67,7 @@ text {
 
 .legenda {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .legenda-item {
   align-items: center;
