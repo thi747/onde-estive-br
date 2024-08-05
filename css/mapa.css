@@ -38,6 +38,7 @@ svg {
   top: -20px;
   height: 880px !important;
   width: 875px;
+  z-index: -1;
 }
 text {
   cursor: default;
