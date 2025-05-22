@@ -113,7 +113,7 @@ const TOTAL_UFS = ESTADOS.length;
 document.getElementById("btnrandom").addEventListener("click", randomizar);
 
 // String de 27 dígitos (1/uf)
-const QUERY_STRING = validaQueryString(obterParametroURL("q") || "430435133060063604340005030");
+const QUERY_STRING = validaQueryString(obterParametroURL("q") || "430435133060063604140005030");
 preencherInstrucoes();
 preencherTabela();
 colorirEstados();
